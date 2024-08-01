@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #9774fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  height: 60vh;
+  width: 50vh;
+  background-color: #fff;
+  padding: 40px 35px;
+  border-radius: 20px;
+}
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.amount {
+  text-align: center;
+  position: relative;
+  color: black;
+}
+.amount input {
+  width: 100%;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid;
+  margin-top: 5px;
+}
+.amount input:focus ~ span,
+.amount input:valid ~ span {
+  top: -80%;
+}
+span {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  padding: 5px 6px;
+  pointer-events: none;
+  transition: 0.2s;
+  font-size: 20px;
+}
+.currency {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.currency select {
+  width: 45%;
+  text-align: center;
+  height: 40px;
+  font-size: 20px;
+  background-color: #9774fb;
+  color: #fff;
+  border-radius: 10px;
+  height: 50px;
+}
+#ico{
+  font-size: 30px;
+}
+.convert {
+  text-align: center;
+  margin-top: 30px;
+}
+.convert button {
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  font-size: 20px;
+  background-color: #9774fb;
+  color: #fff;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.box {
+  background-color: #e5dbfe;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
